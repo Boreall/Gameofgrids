@@ -1,0 +1,74 @@
+.wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column {
+    box-sizing: border-box;
+    float: left;
+    /** Gouttières **/
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.row {
+    width : 1280px;
+    margin : 5px auto;
+}
+.row > div {
+    float : left;
+    margin : 0 5px;
+}
+
+
+.column-1-1 { width : 60px; }
+
+.column-1-4 { width : 400px; }
+
+.column-1-6 { width : 860px; }
+
+.column-1-12 { width : 1250px; }
+
+
+h2,p {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+@media only screen and (min-width:500px) and (max-width:768px) {
+    .row {
+        width : 100%;
+    }
+    .row > div { 
+        margin : 0 0.5%;
+    }
+    .column-1-1 { width : 7.5%; }
+
+    .column-1-4 { width : 50%; }
+
+    .column-1-6 { width : 75%; }
+
+    .column-1-12 { width : 100%; }
+}
+
+@media only screen and (max-width:568px) {
+    .row {
+        width : 100%;
+    }
+    .row > div { 
+        margin : 0 1%;
+    }
+    .column-1-1, .column-1-4, .column-1-6, .column-1-11 { 
+        width : 98%; 
+        float : none;
+    }
+    
+}
+
+@media only screen and ( min-width: 48em ) {
+    .wrapper { width: 1280px; }
+}
